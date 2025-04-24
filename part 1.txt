@@ -23,6 +23,10 @@ Jenkins :
                       +-------------+
 
 
+🔁 Flow:
+GitHub → Code push triggers Jenkins.
+
+Jenkins → Runs Maven to build → Scans with SonarQube → Publishes to Nexus → Deploys to Tomcat.
 
 
 
