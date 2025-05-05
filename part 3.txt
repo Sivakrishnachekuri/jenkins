@@ -1,4 +1,4 @@
-SCM Polling
+ SCM Polling
 ============
 
 1)Jenkins polls SCM based on a defined schedule
