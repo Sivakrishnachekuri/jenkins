@@ -4,30 +4,30 @@ Plugins in jenkins server
 Deploy to container*
 ===================
 
---> Deploy the our application into the tomcat server 
+     --> Deploy the our application into the tomcat server 
 
 
 maven integration
 ==================
 
-if you want to create a maven project type then use this plugin.
+         if you want to create a maven project type then use this plugin.
 
 
 safeRestart
 ===========
 
-systemctl restart jenkins ---> It is in linux server, But we dont have permission to access it , Then how to restart it.
+     systemctl restart jenkins ---> It is in linux server, But we dont have permission to access it , Then how to restart it.
 
 
-restart --->http://65.0.199.60:8080/restart
+      restart --->http://65.0.199.60:8080/restart
 
-safeRestart -->http://65.0.199.60:8080/safeRestart
+       safeRestart -->http://65.0.199.60:8080/safeRestart
 
-IQ] what is the difference between restart and safeRestart ?
+--> IQ] what is the difference between restart and safeRestart ?
 
-restart: It will stop the running jobs and then restarted
+          restart: It will stop the running jobs and then restarted
 
-safeRestart: It will wait for complition of all the jobs and restarted
+          safeRestart: It will wait for complition of all the jobs and restarted
 
 
 NOTE: for safeRestart we have plugin called as a safeRestart, Install and try it
