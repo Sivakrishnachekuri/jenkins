@@ -12,9 +12,13 @@ configure the tools (github,maven,nexus,sonarqube and tomcat ) with jenkins usin
 3 day 
 ---------------------
  explore different trigger option 
-  1 poll scm 
+ 
+  1 poll scm
+  
   2 build periodically 
+  
   3 github webhook 
+  
   4 and other options 
 
 4 day 
