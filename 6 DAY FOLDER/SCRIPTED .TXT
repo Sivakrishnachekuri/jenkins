@@ -1,0 +1,60 @@
+SCRIPTED WAY PIPELINE :
+===============================
+NODE
+{
+
+// WE WRITTING THE YOUR STAGES HERE 
+
+
+}
+
+
+
+
+-->> SAMPLE PIPELINE 
+==============================
+
+
+
+node
+{
+    def mavenHome=tool name:"maven -3.9.9"
+    
+    stage('git clone')
+    {
+     git branch: 'development', credentialsId: '5e0762a7-24b0-41f6-9752-5c000e4ea958', url: 'https://github.com/Sivakrishnachekuri/web-application-war-file.git'
+    }
+    
+    stage('compile')
+    {
+        sh "${mavenHome}/bin/mvn package"  
+    }
+    
+    stage('build')
+    {
+     sh "${mavenHome}/bin/mvn clean package" 
+    }
+    
+   /* 
+    stage('sonar report')
+    {
+     sh "${mavenHome}/bin/mvn clean sonar:sonar"
+    }
+    */
+    
+    
+     stage('deplot to nexus')
+    {
+     sh "${mavenHome}/bin/mvn clean package deploy"
+    }
+    
+    stage('deploy to tomcat')
+    {
+       sh """
+           curl -u siva:siva -T "/var/lib/jenkins/workspace/jio-Scripted-dev -PL/target/maven-web-application.war" "http://18.205.113.103:8080/manager/text/deploy?path=/myapp&update=true"
+         
+        """
+        
+    }
+    
+} //node close 
