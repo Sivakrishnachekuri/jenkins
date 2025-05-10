@@ -1,3 +1,28 @@
+Jenkins Learning Guide:
+==================================
+Welcome to your journey of learning Jenkins, an open-source automation server widely used for continuous integration and continuous delivery (CI/CD). This guide will help you get started with the basics, setup, and essential features of Jenkins.
+
+📌 What is Jenkins?
+________________________________________
+
+Jenkins is an automation server that enables developers to build, test, and deploy software automatically. It supports thousands of plugins to integrate with almost every tool in the CI/CD ecosystem.
+
+
+🛠️ Prerequisites :
+______________________________________________
+
+Before starting, make sure you have the following installed:
+
+   1 Java (JDK 8 or above)
+
+   2 Git
+
+   3 A web browser
+
+
+
+
+
 1 DAY
 --------------------
 
