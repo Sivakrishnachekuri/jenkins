@@ -77,6 +77,11 @@ scripted pipeline:
 declarative pipeline 
 
 
+8 day :
+----------------------
+ 1 jenkins backup 
+ 2 multibranch pipe line 
+
 
 
 
